@@ -1,0 +1,150 @@
+/* Базовые стили с новой цветовой схемой */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Темная тема */
+body.dark-theme {
+    background-color: #1e1e2f; /* мягкий темный голубовато-серый */
+    color: #f0f0f0; /* светлый текст */
+}
+
+/* Светлая тема */
+body.light-theme {
+    background-color: #f4f4f9; /* очень светлый серо-голубой */
+    color: #222; /* темный, приятный для глаз */
+}
+
+header {
+    background-color: #5a7d9a; /* спокойный голубой */
+    padding: 10px;
+}
+
+/* Меню навигации */
+.menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Стиль ссылок и кнопок */
+.menu a, .menu button {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #fff; /* светлый цвет текста */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+/* hover эффект для интерактивных элементов */
+.menu a:hover, .menu button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Карточки проектов */
+.project-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.project-card:hover {
+    background-color: #e0e7f1; /* мягкий голубой оттенок */
+    border-color: #5a7d9a;
+}
+
+/* Основной контент разделов */
+.about, .projects, .project-details {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Фото профиля */
+.profile-img {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 20px;
+    border: 3px solid #5a7d9a; /* приятная рамка */
+}
+
+/* Заголовки */
+h1, h2 {
+    color: #445D75;
+}
+
+/* Общие стили для текста */
+p, li {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Скриншоты и изображения */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Модальное окно */
+#myModal {
+    display: none; /* скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#myModal div {
+    background-color: #fafafa; /* светлый пастельный фон */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    color: #222; /* темный текст для чтения */
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+#myModal div {
+    background-color: #fff; /* светлый фон окна */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Кнопки внутри модального окна */
+#closeModal {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #5a7d9a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#closeModal:hover {
+    background-color: #3b6070;
+}
